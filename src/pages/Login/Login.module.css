@@ -1,0 +1,40 @@
+form {
+  background-color: rgb(230, 228, 228);
+  border: none;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 500px;
+}
+
+.content h1 {
+  color: #0060b1;
+}
+
+.content input {
+  width: 80%;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border-color: #e3e0e0;
+}
+
+.content button {
+  background-color: #ff6500;
+  margin-bottom: 10px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.message {
+  margin-top: -15px;
+  color: red;
+}

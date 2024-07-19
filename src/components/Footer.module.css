@@ -1,0 +1,56 @@
+.container {
+  background-color: #0060b1;
+  padding-top: 1em;
+  padding-left: 3em;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container p {
+  color: white;
+  text-align: center;
+  color: white;
+}
+
+.talk {
+  margin-right: 30px;
+  font-size: 13px;
+  padding: 5px 10px;
+  color: white;
+  background-color: #ff6500;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #dd620f;
+  border-radius: 0.3em;
+  border: none;
+  border-radius: 8px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  gap: 0.5em;
+  font-size: 30px;
+}
+
+a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: white;
+  text-decoration: none; /* Remove underline, if any */
+}

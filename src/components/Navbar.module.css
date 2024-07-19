@@ -1,0 +1,64 @@
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0060b1;
+  align-items: center;
+  padding-left: 3em;
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+}
+
+.nav {
+  cursor: pointer;
+}
+
+.container h1 {
+  font-size: 2em;
+}
+
+.links_list {
+  padding: 0.5em;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.links_list li a {
+  margin-right: 1em; /* vai afastar um link do outro */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links_list button {
+  background-color: #ff6500;
+  border-radius: 0.3em;
+  border: none;
+  padding: 0.5em;
+  display: flex; /* Adicione flex para centralizar */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.links_list button a {
+  color: white; /* Mantém a cor do texto branca */
+  text-decoration: none; /* Remove sublinhado */
+  text-align: center;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  margin-left: 0.5em;
+  padding: 0.5em 0.5em;
+}
+
+/* Hoover do botão entrar */
+.links_list button:hover {
+  background-color: #dd620f;
+  border-radius: 0.3em;
+  border: none;
+  padding: 0.5em;
+}

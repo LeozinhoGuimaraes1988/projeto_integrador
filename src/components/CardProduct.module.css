@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  max-width: 180px;
+  box-shadow: 6px 6px 10px #888888;
+  border-radius: 10px;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px; /* Adicione um espaço entre os cards */
+  cursor: pointer; /* Adicione o cursor de ponteiro para indicar clicável */
+  text-decoration: none; /* Remova a sublinhado de link */
+}
+
+.container img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.container h1 {
+  font-size: 20px;
+}
+
+.textContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.textContainer p {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.textContainer .price {
+  font-size: 25px;
+}
+
+/* Remova qualquer estilo padrão de botão, se aplicável */
+button {
+  all: unset;
+}

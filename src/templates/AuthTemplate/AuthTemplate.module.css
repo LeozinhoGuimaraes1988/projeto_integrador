@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ocupa toda a altura da viewport */
+}
+
+.children {
+  flex: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0060b1;
+  align-items: center;
+  padding-left: 3em;
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+}
