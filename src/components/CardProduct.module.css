@@ -1,16 +1,17 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 140px;
+  width: 180px; /* Ajuste a largura conforme necessário */
   max-width: 180px;
-  box-shadow: 6px 6px 10px #888888;
+  box-shadow: 3px 3px 3px #888888;
   border-radius: 10px;
-  padding: 30px;
+  padding: 20px; /* Reduza o padding para se ajustar melhor ao conteúdo */
   justify-content: center;
   align-items: center;
-  margin: 10px; /* Adicione um espaço entre os cards */
-  cursor: pointer; /* Adicione o cursor de ponteiro para indicar clicável */
-  text-decoration: none; /* Remova a sublinhado de link */
+  margin: 10px; /* Espaço entre os cards */
+  cursor: pointer; /* Indica que o card é clicável */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  background-color: #fff; /* Adicione um fundo branco */
 }
 
 .container img {
@@ -19,7 +20,8 @@
 }
 
 .container h1 {
-  font-size: 20px;
+  font-size: 18px;
+  text-align: center;
 }
 
 .textContainer {
@@ -30,16 +32,17 @@
 }
 
 .textContainer p {
-  font-size: 20px;
+  font-size: 14px;
   margin-top: 0;
   margin-bottom: 5px;
 }
 
 .textContainer .price {
-  font-size: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff6500; /* Cor do preço */
 }
 
-/* Remova qualquer estilo padrão de botão, se aplicável */
 button {
-  all: unset;
+  all: unset; /* Remove qualquer estilo padrão de botão */
 }

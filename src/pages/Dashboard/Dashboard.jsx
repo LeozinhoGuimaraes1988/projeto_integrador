@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import CardProduct from '../components/CardProduct';
-import UserTemplate from '../templates/UserTemplate/Template';
+import CardProduct from '../../components/CardProduct';
 
 import { GrGamepad } from 'react-icons/gr';
 import { GiClothes } from 'react-icons/gi';
@@ -9,14 +8,15 @@ import { MdFastfood } from 'react-icons/md';
 import { AiOutlineSync } from 'react-icons/ai';
 
 import { Carousel } from 'react-responsive-carousel';
-import carousel1 from '../assets/carousel1.jpg';
+import carousel1 from '../../assets/carousel1.jpg';
 
-import styles from './Home.module.css';
+import styles from '../Dashboard/Dashboard.module.css';
 import { Link, useNavigate } from 'react-router-dom';
-import { getApiRecentsProducts, getApiRecommendedsProducts } from './Services';
-import ListLoading from '../components/ListLoading';
+import { getApiRecentsProducts, getApiRecommendedsProducts } from '../Services';
+import ListLoading from '../../components/ListLoading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import AdminTemplate from '../../templates/AdminTemplate/AdminTemplate';
 
 const ItensCategory = [
   {
@@ -107,7 +107,7 @@ const Home = () => {
 
   return (
     <div className={styles.content}>
-      <UserTemplate>
+      <AdminTemplate>
         <div className={styles.carousel}>
           <Carousel showThumbs={false}>
             <div>
@@ -193,7 +193,7 @@ const Home = () => {
             <p>Ver todos os produtos</p>
           </Link>
         </div>
-      </UserTemplate>
+      </AdminTemplate>
       <ToastContainer />
     </div>
   );

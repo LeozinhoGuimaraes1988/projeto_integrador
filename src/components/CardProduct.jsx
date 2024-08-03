@@ -1,24 +1,46 @@
 import { useNavigate } from 'react-router-dom';
-import img_product from '../assets/product.jpg';
 
 import styles from './CardProduct.module.css';
 
-const CardProduct = () => {
+const CardProduct = (props) => {
   const navigate = useNavigate();
 
   return (
     <div
       className={styles.container}
-      onClick={() => navigate('/products/details')}
+      onClick={() => navigate(`/products/details/${props.id}`)}
     >
-      <h1>Produto</h1>
-      <img src={img_product} alt="Produto" />
+      <h1>{props.name}</h1>
+      <img src={props.img} alt="Produto" />
       <div className={styles.textContainer}>
-        <p>Amazon</p>
-        <p className={styles.price}>R$799,99</p>
+        <p>{props.manufacturer}</p>
+        <p className={styles.price}>R$ {props.price}</p>
       </div>
     </div>
   );
 };
 
 export default CardProduct;
+
+// import { useNavigate } from 'react-router-dom';
+// import styles from './CardProduct.module.css';
+
+// const CardProduct = ({ id, name, img, manufacturer, price }) => {
+//   const navigate = useNavigate();
+
+//   return (
+//     <div
+//       className={styles.container}
+//       onClick={() => navigate(`/products/details/${id}`)}
+//     >
+//       <h1>{name}</h1>
+//       <img src={img} alt="Produto" />
+//       <div className={styles.textContainer}>
+//         <p>{manufacturer}</p>
+//         <p className={styles.price}>R$ {price}</p>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default CardProduct;

@@ -1,0 +1,69 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Garante que o pai ocupe toda a altura da tela */
+  background-color: #f0f0f0; /* Exemplo de cor de fundo para o pai */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-radius: 5px;
+  max-height: 600px;
+  background-color: rgb(230, 228, 228); /* Cor de fundo para o formulário */
+  padding: 20px; /* Adiciona um pouco de padding para melhor visualização */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para destaque */
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.formcontainer input {
+  width: 80%;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border-color: #e3e0e0;
+}
+
+select {
+  width: 80%;
+  height: 40px;
+}
+.input {
+  display: flex;
+  flex: 1;
+}
+
+.closeinput {
+  display: flex;
+  flex: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+.yes {
+  padding: 10px 20px;
+  background-color: #ff6500;
+  border-radius: 5px;
+}
+
+.no {
+  padding: 10px 20px;
+  border: 1px solid #ff6500; /* Corrigido para 'solid' */
+  border-radius: 5px;
+}
+
+.modalButton {
+  padding: 5px 10px; /* Padding para o botão */
+  border-radius: 5px; /* Adicione bordas arredondadas */
+  cursor: pointer; /* Adicione o cursor de ponteiro */
+  margin: 5px; /* Espaço entre os botões */
+}

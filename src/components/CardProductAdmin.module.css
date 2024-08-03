@@ -1,0 +1,97 @@
+/* CardProductAdmin.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  max-width: 180px;
+  box-shadow: 3px 3px 3px #888888;
+  border-radius: 10px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.container img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.container h1 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.textContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.textContainer p {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.textContainer .price {
+  display: flex;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff6500;
+}
+
+button {
+  all: unset; /* Remove qualquer estilo padrão de botão */
+}
+
+.details {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-right: 10px;
+  padding: 10px 20px;
+}
+
+.yes {
+  padding: 10px 20px;
+  background-color: #ff6500;
+  border-radius: 5px;
+}
+
+.no {
+  padding: 10px 20px;
+  border: 1px solid #ff6500; /* Corrigido para 'solid' */
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.button {
+  border: 1px solid #ccc; /* Adicione a borda ao botão */
+  padding: 5px 15px; /* Padding para o botão */
+  border-radius: 5px; /* Adicione bordas arredondadas */
+  cursor: pointer; /* Adicione o cursor de ponteiro */
+  margin: 5px; /* Espaço entre os botões */
+}
+
+.modalButton {
+  padding: 5px 10px; /* Padding para o botão */
+  border-radius: 5px; /* Adicione bordas arredondadas */
+  cursor: pointer; /* Adicione o cursor de ponteiro */
+  margin: 5px; /* Espaço entre os botões */
+}

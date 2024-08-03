@@ -36,13 +36,15 @@
 }
 
 .links_list button {
-  background-color: #ff6500;
+  background-color: #f7f7f7;
   border-radius: 0.3em;
-  border: none;
+  color: #ff6500;
   padding: 0.5em;
   display: flex; /* Adicione flex para centralizar */
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
+  padding: 10px 30px;
+  margin-right: 20px;
 }
 
 .links_list button a {
@@ -55,10 +57,16 @@
   padding: 0.5em 0.5em;
 }
 
+.annouce {
+  background-color: #ff6500;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+}
 /* Hoover do botão entrar */
-.links_list button:hover {
+/* .links_list button:hover {
   background-color: #dd620f;
   border-radius: 0.3em;
   border: none;
   padding: 0.5em;
-}
+} */

@@ -1,42 +1,38 @@
+import { useEffect, useState } from 'react';
 import CardProduct from '../../components/CardProduct';
 import UserTemplate from '../../templates/UserTemplate/Template';
 import styles from '../ListRecentsProducts/ListRecentsProducts.module.css';
-import { useParams } from 'react-router-dom';
-import { getApiProductsbyName } from './Services';
-import { useEffect, useState } from 'react';
+// Certifique-se de que este caminho está correto
+import { getApiAllProductsRecents } from './Services';
 import ListLoading from '../../components/ListLoading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const SearchResult = () => {
-  const params = useParams();
-
+const ListRecentsProducts = () => {
   const [allProducts, setAllProducts] = useState([]);
-  const [isLoadingProducts, setLoadingProducts] = useState(true);
+  const [isLoadingRecents, setLoadingRecents] = useState(true);
 
-  const nameProduct = params?.product; // A interrogação serve para dizer que o valor pode ser nulo
-
-  async function getProductByName() {
-    setLoadingProducts(true);
-    const response = await getApiProductsbyName(nameProduct ?? '');
-    setAllProducts(response.data); // Está recebendo os dados do response
-
+  async function getAllRecentsProducts() {
+    setLoadingRecents(true);
     try {
+      const response = await getApiAllProductsRecents();
+      setAllProducts(response.data);
+      console.log(response.data);
     } catch (error) {
-      toast('Erro ao buscar produtos por nome.'); // Chama a notificação diretamente
+      toast.error('Erro ao buscar produtos por nome.'); // Chama a notificação diretamente;
     }
-    setLoadingProducts(false);
+    setLoadingRecents(false);
   }
 
   useEffect(() => {
-    getProductByName();
-  }, [nameProduct]);
+    getAllRecentsProducts();
+  }, []);
 
   return (
     <div>
       <UserTemplate>
-        <h1>Resultado da busca</h1>
-        {isLoadingProducts && <ListLoading />}
+        <h1>Items Recentes</h1>
+        {isLoadingRecents && <ListLoading />}
         <div className={styles.container}>
           {allProducts.map((product) => (
             <CardProduct
@@ -49,11 +45,10 @@ const SearchResult = () => {
             />
           ))}
         </div>
-        <p>Total: {allProducts.length} itens</p>
       </UserTemplate>
       <ToastContainer />
     </div>
   );
 };
 
-export default SearchResult;
+export default ListRecentsProducts;
