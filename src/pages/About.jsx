@@ -11,7 +11,6 @@ import img4 from '../assets/pc.avif';
 
 const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
     items: 5,
   },
@@ -46,7 +45,7 @@ const About = () => {
               qualidade, combinada com um atendimento ao cliente de excelência.
             </p>
           </div>
-          <div className={styles.mission}>
+          <div className={styles.who}>
             <h2>Nossa missão</h2>
             <p>
               Nossa missão é ser a principal escolha dos consumidores quando se
@@ -56,24 +55,25 @@ const About = () => {
               às necessidades e desejos de cada cliente.
             </p>
           </div>
-          <div className={styles.values}>
+          <div className={styles.who}>
             <h2>Nossos valores</h2>
             <p>
               Na Unybay, nossos valores guiam todas as nossas ações e decisões:
+              Inovação:
               <br />
-              <span>Inovação: </span> Estamos constantemente buscando novas
-              tecnologias e produtos que melhorem a vida dos nossos clientes.{' '}
+              Estamos constantemente buscando novas tecnologias e produtos que
+              melhorem a vida dos nossos clientes.
               <br />
-              <span>Qualidade: </span>
-              Comprometemo-nos com a excelência em todos os aspectos do nosso
-              negócio, desde a seleção de produtos até o atendimento pós-venda.
+              Qualidade: Comprometemo-nos com a excelência em todos os aspectos
+              do nosso negócio, desde a seleção de produtos até o atendimento
+              pós-venda.
               <br />
-              <span>Confiança: </span>
-              Construímos relações duradouras com nossos clientes através da
-              transparência, honestidade e integridade. <br />
-              <span>Satisfação do cliente: </span> A satisfação do cliente é a
-              nossa prioridade número um. Trabalhamos arduamente para garantir
-              que cada experiência de compra seja agradável e sem complicações.
+              Confiança: Construímos relações duradouras com nossos clientes
+              através da transparência, honestidade e integridade.
+              <br />
+              Satisfação do cliente: A satisfação do cliente é a nossa
+              prioridade número um. Trabalhamos arduamente para garantir que
+              cada experiência de compra seja agradável e sem complicações.
             </p>
           </div>
 

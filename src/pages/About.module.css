@@ -3,16 +3,11 @@
 }
 
 .container {
-  text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
   background: linear-gradient(45deg, #0060b1, #ff6500);
   width: 100%;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+
   margin-bottom: 50px;
 }
 
@@ -33,7 +28,7 @@
 }
 
 span {
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 
@@ -42,6 +37,10 @@ span {
 .values {
   padding-bottom: 10px;
   line-height: 30px;
+}
+
+.who p {
+  text-align: left;
 }
 
 .mission {

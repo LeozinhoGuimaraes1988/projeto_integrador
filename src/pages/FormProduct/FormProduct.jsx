@@ -80,13 +80,9 @@ const FormProduct = () => {
                 placeholder="Nome do produto"
                 className={styles.content}
               />
-              {errors.name && <span>{errors.name.message}</span>}
             </div>
             <div className={styles.closeinput}>
               <input {...register('manufacturer')} placeholder="Fabricante" />
-              {errors.manufacturer && (
-                <span>{errors.manufacturer.message}</span>
-              )}
             </div>
           </div>
           <div className={styles.input}>
@@ -99,24 +95,19 @@ const FormProduct = () => {
                 <option value="Roupas">Roupas</option>
                 <option value="Veiculos">Veículos</option>
               </select>
-              {errors.category && <span>{errors.category.message}</span>}
             </div>
             <div>
               <input {...register('price')} placeholder="Preço" />
-              {errors.price && <span>{errors.price.message}</span>}
             </div>
           </div>
           <div>
             <input {...register('url1')} placeholder="URL da imagem" />
-            {errors.url1 && <span>{errors.url1.message}</span>}
           </div>
           <div>
             <input {...register('url2')} placeholder="URL da imagem" />
-            {errors.url2 && <span>{errors.url2.message}</span>}
           </div>
           <div style={{ width: 500, height: 300 }}>
             <div ref={quillRef} />
-            {errors.description && <span>{errors.description.message}</span>}
           </div>
           <button type="submit" id="submit-button" style={{ display: 'none' }}>
             Submit
