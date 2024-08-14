@@ -44,7 +44,10 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/my-products" element={<UserProducts />} />
             <Route path="/form-product" element={<FormProduct />} />
-            <Route path="/categories/:category" element={<Categories />} />
+            <Route
+              path="/products/categories/:category"
+              element={<Categories />}
+            />
             <Route path="/talk" element={<TalkWithUs />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
