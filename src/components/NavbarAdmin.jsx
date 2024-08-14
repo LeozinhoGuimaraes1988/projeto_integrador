@@ -21,7 +21,7 @@ const NavbarAdmin = () => {
             <NavLink to="/about">Sair</NavLink>
           </li>
           <li className={styles.annouce}>
-            <NavLink to="/login">Anunciar</NavLink>
+            <NavLink to="/form-product">Anunciar</NavLink>
           </li>
         </ul>
       </div>

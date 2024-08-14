@@ -73,20 +73,21 @@ const FormProduct = () => {
       <AdminTemplate>
         <h1>Novo produto</h1>
         <form onSubmit={handleSubmit(saveProduct)}>
-          <div className={styles.input}>
-            <div className={styles.closeinput}>
+          <div className={styles.row}>
+            <div className={styles.inputGroup}>
               <input
                 {...register('name')}
                 placeholder="Nome do produto"
                 className={styles.content}
               />
             </div>
-            <div className={styles.closeinput}>
+            <div className={styles.inputGroup}>
               <input {...register('manufacturer')} placeholder="Fabricante" />
             </div>
           </div>
-          <div className={styles.input}>
-            <div>
+
+          <div className={styles.row}>
+            <div className={styles.inputGroup}>
               <select {...register('category')} defaultValue="">
                 <option value="" disabled>
                   Selecione uma opção
@@ -96,19 +97,26 @@ const FormProduct = () => {
                 <option value="Veiculos">Veículos</option>
               </select>
             </div>
-            <div>
+            <div className={styles.inputGroup}>
               <input {...register('price')} placeholder="Preço" />
             </div>
           </div>
-          <div>
-            <input {...register('url1')} placeholder="URL da imagem" />
+
+          <div className={styles.row}>
+            <div className={styles.inputGroup}>
+              <input {...register('url1')} placeholder="URL da imagem" />
+            </div>
+            <div className={styles.inputGroup}>
+              <input {...register('url2')} placeholder="URL da imagem" />
+            </div>
           </div>
-          <div>
-            <input {...register('url2')} placeholder="URL da imagem" />
+
+          <div className={styles.quill}>
+            <div style={{ height: 200 }}>
+              <div ref={quillRef} />
+            </div>
           </div>
-          <div style={{ width: 500, height: 300 }}>
-            <div ref={quillRef} />
-          </div>
+
           <button type="submit" id="submit-button" style={{ display: 'none' }}>
             Submit
           </button>

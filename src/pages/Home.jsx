@@ -109,7 +109,7 @@ const Home = () => {
     <div className={styles.content}>
       <UserTemplate>
         <div className={styles.carousel}>
-          <Carousel showThumbs={false}>
+          <Carousel showThumbs={false} showArrows={false}>
             <div>
               <img src={carousel1} alt="carousel" />
             </div>
@@ -130,7 +130,7 @@ const Home = () => {
 
           <button>
             <div onClick={() => navigate(`/products/search/${inputSearch}`)}>
-              <FaSearch className={styles.icon} />
+              <FaSearch className={styles.searchIcon} />
             </div>
           </button>
         </div>
@@ -138,7 +138,6 @@ const Home = () => {
           <h2>Itens recentes</h2>
           {isLoadingRecentsProducts && (
             <>
-              {console.log('ListLoading component is rendering')}
               <ListLoading />
             </>
           )}
@@ -154,7 +153,7 @@ const Home = () => {
               />
             ))}
           </div>
-          <Link to="/all-recents-products" className={styles.link}>
+          <Link to="/all-recents-products">
             <p>Ver todos os produtos recentes</p>
           </Link>
           <div className={styles.category}>
@@ -163,7 +162,11 @@ const Home = () => {
               {ItensCategory.map((category) => (
                 <button
                   key={category.id}
-                  onClick={() => navigate('/products/category/')}
+                  onClick={() =>
+                    navigate(
+                      `/products/categories/${category.title.toLowerCase()}`
+                    )
+                  }
                   className={styles.button}
                 >
                   <div className={styles.names}>
@@ -181,7 +184,6 @@ const Home = () => {
               <CardProduct
                 key={product._id}
                 id={product._id}
-                // product={product}
                 name={product.name}
                 img={product.url1}
                 manufacturer={product.manufacturer}

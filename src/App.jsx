@@ -19,6 +19,7 @@ import Register from './pages/Register/Register';
 import Dashboard from './pages/Dashboard/Dashboard';
 import UserProducts from './pages/UserProducts/UserProducts';
 import FormProduct from './pages/FormProduct/FormProduct';
+import Categories from './pages/Categories/Categories';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/my-products" element={<UserProducts />} />
             <Route path="/form-product" element={<FormProduct />} />
+            <Route path="/categories/:category" element={<Categories />} />
             <Route path="/talk" element={<TalkWithUs />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

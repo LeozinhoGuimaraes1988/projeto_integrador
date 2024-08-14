@@ -6,15 +6,17 @@ const CardProduct = (props) => {
   const navigate = useNavigate();
 
   return (
-    <div
-      className={styles.container}
-      onClick={() => navigate(`/products/details/${props.id}`)}
-    >
-      <h1>{props.name}</h1>
-      <img src={props.img} alt="Produto" />
-      <div className={styles.textContainer}>
-        <p>{props.manufacturer}</p>
-        <p className={styles.price}>R$ {props.price}</p>
+    <div className={styles.content}>
+      <div
+        className={styles.container}
+        onClick={() => navigate(`/products/details/${props.id}`)}
+      >
+        <h1>{props.name}</h1>
+        <img src={props.img} alt="Produto" />
+        <div className={styles.textContainer}>
+          <p>{props.manufacturer}</p>
+          <p className={styles.price}>R$ {props.price}</p>
+        </div>
       </div>
     </div>
   );

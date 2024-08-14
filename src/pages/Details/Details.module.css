@@ -7,27 +7,40 @@
 }
 
 .carousel {
-  width: 80%;
+  width: 50%;
+  height: 40%;
+}
+
+.data {
+  width: 500px;
 }
 
 .data p {
-  font-size: 15px;
-  font-weight: bold;
-  margin-bottom: -7px;
+  font-size: 20px;
+  text-align: left;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.img img {
+  max-width: 300px;
+  height: auto;
 }
 
 .data .price {
   font-size: 30px;
+  font-weight: bold;
 }
 
 .title {
+  padding: 10px;
+  text-align: left;
   font-size: 30px;
   font-weight: bold;
 }
 
 .details h3 {
-  font-size: 20px;
-  font-weight: normal;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {

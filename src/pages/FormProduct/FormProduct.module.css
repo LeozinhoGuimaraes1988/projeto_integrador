@@ -1,69 +1,74 @@
-.form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Garante que o pai ocupe toda a altura da tela */
-  background-color: #f0f0f0; /* Exemplo de cor de fundo para o pai */
-}
-
 form {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.form-container {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
   display: flex;
-  flex-direction: column;
-  border: none;
-  border-radius: 5px;
-  max-height: 600px;
-  background-color: rgb(230, 228, 228); /* Cor de fundo para o formulário */
-  padding: 20px; /* Adiciona um pouco de padding para melhor visualização */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para destaque */
-  margin: auto;
-  margin-bottom: 15px;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-.formcontainer input {
-  width: 80%;
-  height: 40px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border-color: #e3e0e0;
+.inputGroup {
+  flex: 1;
+  margin-right: 20px; /* Espaçamento entre os inputs */
 }
 
+.inputGroup:last-child {
+  margin-right: 0; /* Remove o espaçamento no último item da linha */
+}
+
+input,
 select {
-  width: 80%;
-  height: 40px;
-}
-.input {
-  display: flex;
-  flex: 1;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-.closeinput {
-  display: flex;
-  flex: 1;
+.quill {
+  background-color: #fff;
+  box-shadow: 3px 2px 2px rgb(182, 182, 182);
+  margin-top: 20px;
+  height: 300px; /* Altura mínima do Quill */
+  width: 400px;
+  margin: auto;
 }
 
 .buttons {
   display: flex;
-  justify-content: end;
-  gap: 30px;
-  margin-bottom: 15px;
-  margin-top: 50px;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.yes,
+.no {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .yes {
-  padding: 10px 20px;
   background-color: #ff6500;
-  border-radius: 5px;
 }
 
 .no {
-  padding: 10px 20px;
-  border: 1px solid #ff6500; /* Corrigido para 'solid' */
-  border-radius: 5px;
+  border: 1px solid #ff6500;
 }
 
 .modalButton {
-  padding: 5px 10px; /* Padding para o botão */
-  border-radius: 5px; /* Adicione bordas arredondadas */
-  cursor: pointer; /* Adicione o cursor de ponteiro */
-  margin: 5px; /* Espaço entre os botões */
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
 }

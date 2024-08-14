@@ -19,6 +19,7 @@
 }
 
 .category {
+  margin-top: 10px;
   background-color: #0060b1;
   padding: 20px;
   text-align: center;
@@ -33,6 +34,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 /* garante que o carrossel ocupe 100% da largura disponível. */
@@ -58,6 +60,13 @@
   color: #555;
 }
 
+.searchIcon {
+  color: rgb(72, 71, 71);
+  font-size: 35px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
 span {
   color: #fff;
 }
@@ -70,6 +79,9 @@ span {
   margin: 0 auto;
 }
 
+.itens button {
+  cursor: pointer;
+}
 .names {
   display: flex;
   flex-direction: column;
@@ -132,11 +144,7 @@ span {
   }
 }
 
-button {
-  cursor: pointer;
-}
-
-.link {
+p {
   text-decoration: none;
-  color: inherit;
+  color: black;
 }

@@ -19,7 +19,7 @@ const ListRecentsProducts = () => {
       setAllProducts(response.data);
       console.log(response.data);
     } catch (error) {
-      toast.error('Erro ao buscar produtos por nome.'); // Chama a notificação diretamente;
+      toast.error('Erro ao buscar produtos por nome.');
     }
     setLoadingRecents(false);
   }
@@ -31,7 +31,7 @@ const ListRecentsProducts = () => {
   return (
     <div>
       <UserTemplate>
-        <h1>Items Recentes</h1>
+        <h1>Itens Recentes</h1>
         {isLoadingRecents && <ListLoading />}
         <div className={styles.container}>
           {allProducts.map((product) => (
